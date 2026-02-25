@@ -140,3 +140,77 @@ a {
   color: #aaa;
   font-size: 0.9rem;
 }
+/* HERO */
+
+.hero {
+  background: linear-gradient(135deg, #111 0%, #1f1f1f 100%);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-sub {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #0066ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.cta-button:hover {
+  background: #0052cc;
+}
+
+/* ABOUT */
+
+.about {
+  padding: 80px 20px;
+  background: #f5f7fa;
+}
+
+.about-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+}
+
+/* ARTICLES */
+
+.articles-section {
+  padding: 80px 20px;
+}
+
+.articles-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.articles-section h2 {
+  margin-bottom: 40px;
+}
+
+.article-card h3 {
+  margin-top: 0;
+}
