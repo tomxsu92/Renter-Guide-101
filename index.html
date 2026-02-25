@@ -50,10 +50,16 @@
 
       data.forEach(article => {
         const articleDiv = document.createElement("div");
-        articleDiv.className = "article-card";
+
+        if (article.featured) {
+          articleDiv.className = "featured-article";
+        } else {
+          articleDiv.className = "article-card";
+        }
 
         articleDiv.innerHTML = `
           <h3>${article.title}</h3>
+          <p class="article-desc">${article.description || ""}</p>
           <a href="articles/${article.slug}.html">Read Article →</a>
         `;
 
@@ -64,6 +70,3 @@
       console.error("Error loading articles:", error);
     });
 </script>
-
-</body>
-</html>
