@@ -277,32 +277,24 @@ body {
 
 .roadmap-list li {
   margin-bottom: 18px;
-  padding: 18px 22px;
-  background: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.04);
-  line-height: 1.5;
-}
-
-.roadmap-item {
-  margin-bottom: 30px;
   padding: 20px;
-  border-left: 4px solid #2c7be5;
-  background: #fafafa;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-.next-step {
-  margin-top: 50px;
-  text-align: center;
+.stage-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
 }
 
-.back-home {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.stage-label {
+.stage-number {
+  min-width: 85px;
   font-weight: 600;
-  margin-right: 6px;
   color: #2f5b4d;
+}
+
+.stage-text {
+  flex: 1;
 }
