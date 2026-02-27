@@ -300,3 +300,9 @@ body {
   margin-top: 40px;
   text-align: center;
 }
+
+.stage-label {
+  font-weight: 600;
+  margin-right: 6px;
+  color: #2f5b4d;
+}
