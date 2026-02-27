@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Renter Guide 101 | Practical Renter Advice</title>
+  <title>Nestwell | Learn. Prepare. Own — Step by Step</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Practical renter advice. No fluff. Protect your deposit. Maintain your space. Avoid expensive mistakes.">
+  <meta name="description" content="Nestwell is a calm, community-driven roadmap helping renters learn, prepare, and move toward homeownership step by step.">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,61 +12,53 @@
 
 <header class="hero">
   <div class="hero-inner">
-    <h1>Renter Guide 101</h1>
+    <h1>Nestwell</h1>
     <p class="hero-sub">
-      Practical renter advice. No fluff. No landlord surprises.
+      Learn. Prepare. Own — Step by Step.
     </p>
-    <a href="#articles" class="cta-button">Start Reading</a>
+    <p class="hero-description">
+      A calm, community-driven space where we learn the path to homeownership together — clearly and without pressure.
+    </p>
+    <a href="start-here.html" class="cta-button">Start Your Journey</a>
   </div>
 </header>
 
-<section class="about">
-  <div class="about-inner">
-    <h2>Why This Exists</h2>
-    <p>
-      Renting shouldn’t feel like walking on eggshells.
-      This guide gives you straightforward maintenance advice so you
-      protect your deposit, avoid damage fees, and stay ahead of problems.
-    </p>
-  </div>
-</section>
+<section class="roadmap">
+  <div class="roadmap-inner">
+    <h2>Your Path to Homeownership</h2>
 
-<section id="articles" class="articles-section">
-  <div class="articles-inner">
-    <h2>Latest Articles</h2>
-    <div id="articles-container"></div>
+    <div class="stage-grid">
+
+      <div class="stage-card">
+        <h3>Stage 1 — Rent Smart</h3>
+        <p>Build strong habits and protect yourself while renting.</p>
+        <a href="rent-smart/index.html">Explore Stage 1 →</a>
+      </div>
+
+      <div class="stage-card">
+        <h3>Stage 2 — Prepare Financially</h3>
+        <p>Strengthen credit, reduce debt, and plan your next move.</p>
+        <a href="#">Coming Soon</a>
+      </div>
+
+      <div class="stage-card">
+        <h3>Stage 3 — Buy Smart</h3>
+        <p>Understand the buying process with clarity and confidence.</p>
+        <a href="#">Coming Soon</a>
+      </div>
+
+      <div class="stage-card">
+        <h3>Stage 4 — Maintain & Grow</h3>
+        <p>Protect your home and build long-term stability.</p>
+        <a href="#">Coming Soon</a>
+      </div>
+
+    </div>
   </div>
 </section>
 
 <footer class="site-footer">
-  <p>© 2026 Renter Guide 101 — Practical renter advice, no fluff.</p>
+  <p>© 2026 Nestwell — Learn. Prepare. Own.</p>
 </footer>
 
-<script>
-  fetch("articles.json")
-    .then(response => response.json())
-    .then(data => {
-      const container = document.getElementById("articles-container");
-
-      data.forEach(article => {
-        const articleDiv = document.createElement("div");
-
-        if (article.featured) {
-          articleDiv.className = "featured-article";
-        } else {
-          articleDiv.className = "article-card";
-        }
-
-        articleDiv.innerHTML = `
-          <h3>${article.title}</h3>
-          <p class="article-desc">${article.description || ""}</p>
-          <a href="articles/${article.slug}.html">Read Article →</a>
-        `;
-
-        container.appendChild(articleDiv);
-      });
-    })
-    .catch(error => {
-      console.error("Error loading articles:", error);
-    });
-</script>
+</body>
