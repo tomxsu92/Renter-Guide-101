@@ -1,455 +1,183 @@
-/* Global Reset */
+/* ===============================
+   GLOBAL RESET
+================================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 body {
-  background-color: #f5f7f4;
-  color: #1f2933;
+  font-family: 'Inter', sans-serif;
+  background: #f4f6f5;
+  color: #1f2a37;
   line-height: 1.6;
 }
 
-/* Hero Section */
+/* ===============================
+   HERO SECTION
+================================= */
 .hero {
-  background: linear-gradient(180deg, #eef2ed 0%, #f5f7f4 100%);
-  padding: 100px 20px 80px;
   text-align: center;
-}
-
-.hero-inner {
-  max-width: 750px;
-  margin: 0 auto;
+  padding: 60px 20px 30px 20px;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  letter-spacing: -1px;
+  font-size: 40px;
+  margin-bottom: 10px;
 }
 
-.hero-sub {
-  font-size: 1.25rem;
-  color: #3b4a3f;
-  margin-bottom: 20px;
-}
-
-.hero-description {
-  font-size: 1rem;
-  color: #5f6b62;
-  margin-bottom: 40px;
-}
-
-/* Button */
-.cta-button {
-  display: inline-block;
-  padding: 14px 28px;
-  background-color: #3a6f5e;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 500;
-  transition: all 0.2s ease;
-}
-
-.cta-button:hover {
-  background-color: #2f5b4d;
-  transform: translateY(-2px);
-}
-
-/* Roadmap Section */
-.roadmap {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.roadmap-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.roadmap h2 {
-  font-size: 2rem;
-  margin-bottom: 50px;
-}
-
-.stage-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 25px;
-}
-
-/* Cards */
-.stage-card {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
-  text-align: left;
-  transition: all 0.2s ease;
-}
-
-.stage-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
-}
-
-.stage-card h3 {
-  margin-bottom: 15px;
-  font-size: 1.1rem;
-}
-
-.stage-card p {
-  color: #5f6b62;
-  margin-bottom: 20px;
-}
-
-.stage-card a {
-  text-decoration: none;
-  color: #3a6f5e;
-  font-weight: 500;
-}
-
-/* Footer */
-.site-footer {
-  padding: 40px 20px;
-  text-align: center;
-  background-color: #eef2ed;
-  font-size: 0.9rem;
-  color: #5f6b62;
-}
-/* Page Layout */
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.page-header {
-  background: #f4f7fb;
-  padding: 3rem 1rem;
-  text-align: center;
-}
-
-.page-header h1 {
-  margin-top: 1rem;
-}
-
-.page-intro {
-  color: #555;
-  margin-top: 0.5rem;
-}
-
-.back-link {
-  display: inline-block;
-  margin-bottom: 1rem;
-  text-decoration: none;
-  color: #3b6edc;
-  font-weight: 500;
-}
-
-.back-link:hover {
-  text-decoration: underline;
-}
-
-.lesson-block {
-  margin-bottom: 2.5rem;
-}
-
-.lesson-block h2 {
-  margin-bottom: 0.75rem;
-  color: #1f2d3d;
-}
-
-.lesson-block p {
-  line-height: 1.6;
-  color: #444;
-}
-/* ---------- GLOBAL CONTAINER ---------- */
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 60px 20px;
-}
-
-/* ---------- SUB HERO ---------- */
-
-.sub-hero {
-  background: #f4f7f9;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.subtitle {
-  color: #555;
+.hero p {
   font-size: 18px;
-  margin-top: 10px;
+  color: #6b7280;
 }
 
-/* ---------- CONTENT SECTIONS ---------- */
-
-.content-section {
-  margin-bottom: 60px;
+/* ===============================
+   MAIN LAYOUT (Sidebar + Cards)
+================================= */
+.module-layout {
+  max-width: 1200px;
+  margin: 40px auto 60px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 50px;
+  align-items: start;
 }
 
-.content-section h2 {
-  margin-bottom: 20px;
-  font-size: 28px;
-}
-
-.content-section p {
-  line-height: 1.7;
-  color: #444;
-}
-
-/* ---------- INFO CARDS ---------- */
-
-.info-card {
+/* ===============================
+   SIDEBAR
+================================= */
+.sidebar {
   background: #ffffff;
   padding: 25px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.sidebar h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #374151;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.sidebar li:hover {
+  color: #2f6f5e;
+}
+
+/* ===============================
+   CARDS CONTAINER
+================================= */
+.module-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+/* ===============================
+   INDIVIDUAL CARD
+================================= */
+.info-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.08);
 }
 
 .info-card h3 {
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
-/* ---------- BUTTONS ---------- */
-
-.secondary-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #e0e6eb;
-  color: #333;
-  text-decoration: none;
-  border-radius: 6px;
-  margin-top: 20px;
-}
-
-.secondary-button:hover {
-  background: #d4dbe0;
-}
-
-.back-home {
-  text-align: center;
-  margin-top: 40px;
-}
-.page-header {
-  padding: 60px 20px;
-  text-align: center;
-  background: #f5f7fa;
-}
-
-.page-subtitle {
-  max-width: 600px;
-  margin: 10px auto 0;
-  font-size: 1.1rem;
-  color: #555;
-}
-
-.content-section {
-  padding: 60px 20px;
-}
-
-.container {
-  max-width: 900px;
-  margin: auto;
-}
-
-.roadmap-list {
-  list-style: none;
-  padding: 0;
-  margin: 30px 0;
-}
-
-.roadmap-list li {
-  margin-bottom: 18px;
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
-
-.stage-row {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-.stage-number {
-  min-width: 85px;
-  font-weight: 600;
-  color: #2f5b4d;
-}
-
-.stage-text {
-  flex: 1;
-}
-.module-hero {
-  background: #eef3f1;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.module-content {
-  display: flex;
-  max-width: 1100px;
-  margin: 60px auto;
-  gap: 40px;
-  padding: 0 20px;
-}
-
-.module-sidebar {
-  width: 250px;
-  background: #f9fbfa;
-  padding: 20px;
-  border-radius: 10px;
-  height: fit-content;
-}
-
-.module-sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 15px 0;
-}
-
-.module-sidebar li {
-  margin-bottom: 12px;
-}
-
-.module-main {
-  flex: 1;
-}
-
-.module-main h2 {
-  margin-bottom: 20px;
-}
-
-.module-main p {
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-/* =========================
-   STAGE MODULE LAYOUT
-========================= */
-
-.module-hero {
-  background: linear-gradient(180deg, #eef2ed 0%, #f5f7f4 100%);
-  padding: 60px 20px 40px;
-  text-align: center;
-}
-
-.module-hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  font-size: 1.1rem;
-  color: #5f6b62;
-}
-
-/* Layout */
-
-.module-layout {
-  margin-top: 0;
-}
-
-/* Sidebar */
-
-.module-sidebar {
-  width: 240px;
-  background: #ffffff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-  height: fit-content;
-}
-
-.module-sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 15px;
-}
-
-.module-sidebar li {
-  margin-bottom: 12px;
-}
-
-.module-sidebar a {
-  text-decoration: none;
-  color: #444;
-}
-
-.active-link {
-  font-weight: 600;
-  color: #2f5b4d;
-}
-
-/* Cards */
-
-.module-content {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 0 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.info-card {
-  background: #ffffff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-  display: flex;
-  flex-direction: column;
+.info-card p,
+.info-card ul {
+  font-size: 15px;
+  color: #4b5563;
 }
 
 .info-card ul {
   padding-left: 18px;
-  margin-top: 10px;
 }
 
 .info-card li {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
-/* Navigation */
-
-.navigation-buttons {
-  max-width: 1100px;
-  margin: 0 auto 80px;
+/* ===============================
+   NAVIGATION BUTTONS
+================================= */
+.navigation {
+  max-width: 1200px;
+  margin: 40px auto 80px auto;
   padding: 0 20px;
   display: flex;
-  gap: 15px;
+  justify-content: space-between;
 }
 
-/* Responsive */
+.back-button {
+  background: #e5e7eb;
+  color: #374151;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
 
-@media (max-width: 900px) {
+.back-button:hover {
+  background: #d1d5db;
+}
+
+.next-button {
+  background: #2f6f5e;
+  color: white;
+  padding: 14px 26px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.next-button:hover {
+  background: #285f51;
+  transform: translateY(-2px);
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+@media (max-width: 1000px) {
   .module-layout {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   .module-content {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
-  .module-sidebar {
-    width: 100%;
+  .navigation {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
   }
 }
