@@ -445,3 +445,41 @@ body {
   font-weight: 600;
   color: #2f5b4d;
 }
+.module-layout {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+}
+
+.module-sidebar {
+  width: 220px;
+}
+
+.module-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.module-sidebar li {
+  margin-bottom: 10px;
+}
+
+.module-sidebar a {
+  text-decoration: none;
+  color: #444;
+}
+
+.active-link {
+  font-weight: 600;
+  color: #2f5b4d;
+}
+
+.module-content {
+  flex: 1;
+}
+
+.navigation-buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
