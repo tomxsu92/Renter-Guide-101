@@ -348,7 +348,7 @@ body {
 
 .module-hero {
   background: linear-gradient(180deg, #eef2ed 0%, #f5f7f4 100%);
-  padding: 80px 20px;
+  padding: 60px 20px 40px;
   text-align: center;
 }
 
@@ -440,7 +440,6 @@ body {
   .module-sidebar {
     width: 100%;
   }
-}
 .active-link {
   font-weight: 600;
   color: #2f5b4d;
@@ -453,8 +452,6 @@ body {
   padding: 0 20px;
   align-items: flex-start;
 }
-}
-
 .module-sidebar {
   width: 220px;
 }
@@ -485,5 +482,5 @@ body {
 .navigation-buttons {
   margin-top: 40px;
   display: flex;
-  justify-content: space-between;
+  gap: 15px;
 }
