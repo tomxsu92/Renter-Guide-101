@@ -441,3 +441,7 @@ body {
     width: 100%;
   }
 }
+.active-link {
+  font-weight: 600;
+  color: #2f5b4d;
+}
