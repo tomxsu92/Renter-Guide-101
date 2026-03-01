@@ -457,6 +457,10 @@ body {
   
 .module-sidebar {
   width: 220px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
 
 .module-sidebar ul {
@@ -493,4 +497,12 @@ body {
   margin-top: 40px;
   display: flex;
   gap: 15px;
+}
+.info-card ul {
+  padding-left: 18px;
+  margin-top: 10px;
+}
+
+.info-card li {
+  margin-bottom: 6px;
 }
