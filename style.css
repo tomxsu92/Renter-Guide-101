@@ -376,3 +376,43 @@ body {
   background: #e5eaf2;
   margin: 40px 0;
 }
+/* =========================
+   Clean Reading Layout Reset
+========================= */
+
+.lesson-layout {
+  display: block !important;
+  padding: 60px 20px 100px;
+}
+
+.lesson-content {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.9;
+}
+
+.navigation-buttons {
+  max-width: 720px;
+  margin: 60px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+body {
+  background: #f9fafc;
+}
+.secondary-button,
+.cta-button {
+  background: none;
+  padding: 8px 0;
+  border-radius: 0;
+  font-weight: 500;
+}
+
+.secondary-button {
+  color: #6b7280;
+}
+
+.cta-button {
+  color: #4f8cff;
+}
