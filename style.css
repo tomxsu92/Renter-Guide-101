@@ -294,3 +294,13 @@ body {
   max-width: 900px;
   margin: auto;
 }
+.info-card:nth-child(odd) {
+  background: #ffffff;
+}
+
+.info-card:nth-child(even) {
+  background: #f8fbff;
+}
+.module-content {
+  gap: 40px;
+}
