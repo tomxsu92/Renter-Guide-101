@@ -500,3 +500,26 @@ body {
   font-size: 1.1rem;
   color: #6b7280;
 }
+/* Top Navigation */
+
+.top-nav{
+  width:100%;
+  background:#ffffff;
+  border-bottom:1px solid #e5e7eb;
+}
+
+.nav-inner{
+  max-width:900px;
+  margin:auto;
+  padding:14px 20px;
+}
+
+.home-link{
+  text-decoration:none;
+  font-weight:600;
+  color:#2563eb;
+}
+
+.home-link:hover{
+  text-decoration:underline;
+}
