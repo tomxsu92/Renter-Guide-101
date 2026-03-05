@@ -545,3 +545,88 @@ body {
   height:26px;
   fill:#2563eb;
 }
+/* ============================= */
+/* LESSON PAGE SYSTEM */
+/* ============================= */
+
+.lesson-hero{
+text-align:center;
+padding:60px 20px 30px;
+background:#f4f7fb;
+}
+
+.lesson-hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.lesson-subtitle{
+color:#5a6b7b;
+font-size:18px;
+max-width:600px;
+margin:auto;
+}
+
+.lesson-container{
+max-width:760px;
+margin:auto;
+padding:40px 20px;
+}
+
+.lesson-content p{
+line-height:1.8;
+margin-bottom:18px;
+font-size:17px;
+color:#2d3748;
+}
+
+.lesson-section{
+margin-bottom:50px;
+}
+
+.lesson-section h2{
+font-size:26px;
+margin-bottom:16px;
+}
+
+.lesson-section ul{
+padding-left:20px;
+line-height:1.8;
+}
+
+.lesson-section li{
+margin-bottom:8px;
+}
+
+
+/* Highlight Box */
+
+.lesson-highlight{
+background:#f1f6ff;
+padding:25px;
+border-radius:10px;
+margin-bottom:50px;
+}
+
+.lesson-highlight h2{
+margin-top:0;
+}
+
+
+/* Progress Check */
+
+.lesson-check{
+background:#f9fafb;
+padding:25px;
+border-radius:10px;
+}
+
+.lesson-check ul{
+list-style:none;
+padding-left:0;
+}
+
+.lesson-check li{
+margin-bottom:10px;
+font-size:16px;
+}
